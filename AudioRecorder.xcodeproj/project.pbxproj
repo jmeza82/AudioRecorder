@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8302F9DE1FFF4CF600F9C355 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302F9DD1FFF4CF600F9C355 /* AppDelegate.swift */; };
 		8302F9E01FFF4CF600F9C355 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302F9DF1FFF4CF600F9C355 /* ViewController.swift */; };
-		8302F9E31FFF4CF600F9C355 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8302F9E11FFF4CF600F9C355 /* Main.storyboard */; };
+		8302F9E31FFF4CF600F9C355 /* AudioRecorder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8302F9E11FFF4CF600F9C355 /* AudioRecorder.storyboard */; };
 		8302F9E51FFF4CF600F9C355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8302F9E41FFF4CF600F9C355 /* Assets.xcassets */; };
 		8302F9E81FFF4CF600F9C355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8302F9E61FFF4CF600F9C355 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,7 +18,7 @@
 		8302F9DA1FFF4CF600F9C355 /* AudioRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8302F9DD1FFF4CF600F9C355 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8302F9DF1FFF4CF600F9C355 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8302F9E21FFF4CF600F9C355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8302F9E21FFF4CF600F9C355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AudioRecorder.storyboard; sourceTree = "<group>"; };
 		8302F9E41FFF4CF600F9C355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8302F9E71FFF4CF600F9C355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8302F9E91FFF4CF600F9C355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 			children = (
 				8302F9DD1FFF4CF600F9C355 /* AppDelegate.swift */,
 				8302F9DF1FFF4CF600F9C355 /* ViewController.swift */,
-				8302F9E11FFF4CF600F9C355 /* Main.storyboard */,
+				8302F9E11FFF4CF600F9C355 /* AudioRecorder.storyboard */,
 				8302F9E41FFF4CF600F9C355 /* Assets.xcassets */,
 				8302F9E61FFF4CF600F9C355 /* LaunchScreen.storyboard */,
 				8302F9E91FFF4CF600F9C355 /* Info.plist */,
@@ -125,7 +125,7 @@
 			files = (
 				8302F9E81FFF4CF600F9C355 /* LaunchScreen.storyboard in Resources */,
 				8302F9E51FFF4CF600F9C355 /* Assets.xcassets in Resources */,
-				8302F9E31FFF4CF600F9C355 /* Main.storyboard in Resources */,
+				8302F9E31FFF4CF600F9C355 /* AudioRecorder.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,12 +144,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8302F9E11FFF4CF600F9C355 /* Main.storyboard */ = {
+		8302F9E11FFF4CF600F9C355 /* AudioRecorder.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8302F9E21FFF4CF600F9C355 /* Base */,
 			);
-			name = Main.storyboard;
+			name = AudioRecorder.storyboard;
 			sourceTree = "<group>";
 		};
 		8302F9E61FFF4CF600F9C355 /* LaunchScreen.storyboard */ = {
@@ -277,6 +277,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39YB79HE4S;
 				INFOPLIST_FILE = AudioRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.tech-in.AudioRecorder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39YB79HE4S;
 				INFOPLIST_FILE = AudioRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.tech-in.AudioRecorder";
 				PRODUCT_NAME = "$(TARGET_NAME)";

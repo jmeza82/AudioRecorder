@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Futura.ttc">
+            <string>Futura-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AudioRecorder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yK0-iv-ADX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="108"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="3lz-Kt-rlf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="microphone" translatesAutoresizingMaskIntoConstraints="NO" id="gYR-84-Clw">
+                                <rect key="frame" x="0.0" y="107" width="375" height="333"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8k-yC-xU7">
+                                <rect key="frame" x="152" y="551" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="4fM-Mp-ljc"/>
+                                    <constraint firstAttribute="height" constant="70" id="PYk-OO-K4o"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="rec"/>
+                                <connections>
+                                    <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fxb-nn-YVg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMi-NP-Qpy">
+                                <rect key="frame" x="263" y="551" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="7gc-ZO-fJy"/>
+                                    <constraint firstAttribute="width" constant="70" id="EOd-xE-Vr5"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="stop"/>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="raF-fv-8lX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0YF-ZG-lOS">
+                                <rect key="frame" x="41" y="551" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="B5o-Q4-VTp"/>
+                                    <constraint firstAttribute="width" constant="70" id="Fif-SO-Svu"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="play-button"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gU9-SG-C4s"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hMM-lG-hJy">
+                                <rect key="frame" x="0.0" y="510" width="375" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="UVH-m7-hGQ"/>
+                                </constraints>
+                                <color key="progressTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="trackTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgn-P9-Pq6">
+                                <rect key="frame" x="87" y="416" width="200" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="fbV-ND-i4p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88705635070800781" green="0.48827022314071655" blue="0.24723893404006958" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nMi-NP-Qpy" secondAttribute="bottom" constant="46" id="2K8-s3-O5M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0YF-ZG-lOS" secondAttribute="bottom" constant="46" id="5Ye-We-Hoj"/>
+                            <constraint firstItem="hMM-lG-hJy" firstAttribute="top" secondItem="gYR-84-Clw" secondAttribute="bottom" constant="70" id="8Dd-GH-TUM"/>
+                            <constraint firstItem="H8k-yC-xU7" firstAttribute="leading" secondItem="0YF-ZG-lOS" secondAttribute="trailing" constant="41" id="AE7-3t-yJ2"/>
+                            <constraint firstItem="Sgn-P9-Pq6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="F7t-d0-Mu2"/>
+                            <constraint firstItem="hMM-lG-hJy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FkL-px-aw8"/>
+                            <constraint firstItem="H8k-yC-xU7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I4y-NE-Y7m"/>
+                            <constraint firstItem="H8k-yC-xU7" firstAttribute="top" secondItem="hMM-lG-hJy" secondAttribute="bottom" constant="31" id="J18-g8-A0Y"/>
+                            <constraint firstItem="gYR-84-Clw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="K0W-qF-Gx7"/>
+                            <constraint firstItem="gYR-84-Clw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Nks-q0-Yub"/>
+                            <constraint firstItem="hMM-lG-hJy" firstAttribute="top" secondItem="Sgn-P9-Pq6" secondAttribute="bottom" constant="35" id="Pj0-UV-AYp"/>
+                            <constraint firstItem="yK0-iv-ADX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Vnb-FZ-mmC"/>
+                            <constraint firstItem="nMi-NP-Qpy" firstAttribute="leading" secondItem="H8k-yC-xU7" secondAttribute="trailing" constant="41" id="WUT-jW-rVz"/>
+                            <constraint firstItem="yK0-iv-ADX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XBJ-LZ-8cr"/>
+                            <constraint firstAttribute="trailing" secondItem="hMM-lG-hJy" secondAttribute="trailing" id="gij-Qb-LLa"/>
+                            <constraint firstItem="yK0-iv-ADX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jyD-CW-kQB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="H8k-yC-xU7" secondAttribute="bottom" constant="46" id="kKo-pU-qkh"/>
+                            <constraint firstItem="gYR-84-Clw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rgu-Xs-fOL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sgn-P9-Pq6" secondAttribute="trailing" constant="88" id="vAG-Yh-pxN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="hMM-lG-hJy" id="VLF-Mj-Vhr"/>
+                        <outlet property="timerlabel" destination="Sgn-P9-Pq6" id="7qE-2r-FC8"/>
+                        <outlet property="titelLabel" destination="yK0-iv-ADX" id="6Cv-rf-dNm"/>
+                        <outletCollection property="controls" destination="0YF-ZG-lOS" collectionClass="NSMutableArray" id="UUO-i0-fMT"/>
+                        <outletCollection property="controls" destination="H8k-yC-xU7" collectionClass="NSMutableArray" id="B00-HB-pkO"/>
+                        <outletCollection property="controls" destination="nMi-NP-Qpy" collectionClass="NSMutableArray" id="9dn-bN-Da4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="microphone" width="256" height="256"/>
+        <image name="play-button" width="32" height="32"/>
+        <image name="rec" width="64" height="64"/>
+        <image name="stop" width="64" height="64"/>
+    </resources>
+</document>
